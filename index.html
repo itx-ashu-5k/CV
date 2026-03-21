@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Ashish Sharma | App Developer Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Ashish Sharma, an App Developer specializing in Flutter and Firebase.">
+    <meta name="author" content="Ashish Sharma">
+    <meta name="keywords" content="Flutter developer, App developer, Firebase, Portfolio, Kolkata, Android">
+
+    <!-- Mobile / PWA Meta -->
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Ashish Sharma">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ashish Sharma | App Developer Portfolio">
+    <meta property="og:description"
+        content="Flutter & Firebase specialist building modern, user-friendly applications.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/profile.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("uFwZ8lwDLP2WKTe-w");
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- Page Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo">Ashish.</div>
+            <div class="preloader-bar">
+                <div class="preloader-fill"></div>
+            </div>
+            <p class="preloader-text">Loading...</p>
+        </div>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">Ashish.</a>
+
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#resume" class="nav-link">Resume</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <span class="icon-sun">☀</span>
+                    <span class="icon-moon">☾</span>
+                </button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero section reveal">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <p class="hero-subtitle">Hi, I'm Ashish Sharma</p>
+                    <h1 class="hero-title">I'm a <span class="typing-text"></span><span class="cursor">|</span></h1>
+                    <p class="hero-description">
+                        I am a passionate app developer with expertise in Flutter and Firebase. Based in Kolkata, I
+                        specialize in creating modern, user-friendly applications with a focus on performance and user
+                        experience.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#contact" class="btn btn-primary">Hire Me</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="img-wrapper">
+                        <img src="assets/profile.png" alt="Ashish Sharma - App Developer" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section reveal">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I am a passionate app developer with expertise in Flutter and Firebase. Based in Kolkata, I
+                            specialize in creating modern, user-friendly applications with a focus on performance and
+                            user experience.
+                        </p>
+                        <p>
+                            <strong>Location:</strong> Kolkata, India<br>
+                            <strong>Current Status:</strong> Available for remote work and freelance projects.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="resume section reveal">
+            <div class="container">
+                <h2 class="section-title">Education & Qualifications</h2>
+                <div class="timeline">
+                    <!-- Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">PGDCA</div>
+                        <div class="timeline-content">
+                            <h3>Post Graduate Diploma in Computer Applications</h3>
+                            <p class="company">Specialized in Advanced Computing</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">DDTA</div>
+                        <div class="timeline-content">
+                            <h3>Diploma in Digital Technology Application</h3>
+                            <p class="company">Focus on Digital Tools</p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Certification</div>
+                        <div class="timeline-content">
+                            <h3>Desktop Publishing & Data Entry</h3>
+                            <p class="company">JIS Institute</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section reveal">
+            <div class="container">
+                <h2 class="section-title">My Skills</h2>
+                <div class="skills-grid">
+
+                    <!-- Mobile App -->
+                    <div class="skill-category">
+                        <h3>Mobile App</h3>
+                        <div class="skill-bars">
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-header">
+                                    <span class="skill-name">Flutter</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-header">
+                                    <span class="skill-name">Dart</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-header">
+                                    <span class="skill-name">Android Development</span>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" data-width="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Web Technologies -->
+                    <div class="skill-category">
+                        <h3>Web Technologies</h3>
+                        <div class="skill-bars">
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-header">
+                                    <span class="skill-name">HTML5 / CSS3</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-header">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percent">70%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" data-width="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-header">
+                                    <span class="skill-name">Responsive Design</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" data-width="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend & Tools -->
+                    <div class="skill-category">
+                        <h3>Backend &amp; Tools</h3>
+                        <div class="skill-bars">
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-header">
+                                    <span class="skill-name">Firebase</span>
+                                    <span class="skill-percent">88%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" data-width="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-header">
+                                    <span class="skill-name">Git / GitHub</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" data-width="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-header">
+                                    <span class="skill-name">VS Code</span>
+                                    <span class="skill-percent">95%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill" data-width="95"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section reveal">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card tilt-card">
+                        <div class="tilt-glare"></div>
+                        <div class="project-img">
+                            <img src="assets/project1.png" alt="E-Commerce App">
+                        </div>
+                        <div class="project-info">
+                            <h3>E-Commerce App</h3>
+                            <p>A full-featured shopping app with cart and payment integration.</p>
+                            <div class="tech-stack">
+                                <span>Flutter</span>
+                                <span>Firebase</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="btn-link read-more-btn" data-modal="modal-1">Read Case Study</button>
+                                <a href="#" class="link-text">Live Demo</a>
+                                <a href="#" class="link-text">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card tilt-card">
+                        <div class="tilt-glare"></div>
+                        <div class="project-img">
+                            <img src="assets/project2.png" alt="Task Manager">
+                        </div>
+                        <div class="project-info">
+                            <h3>Task Manager</h3>
+                            <p>Productivity tool for managing daily tasks and workflows.</p>
+                            <div class="tech-stack">
+                                <span>Flutter</span>
+                                <span>SQLite</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="btn-link read-more-btn" data-modal="modal-2">Read Case Study</button>
+                                <a href="#" class="link-text">Live Demo</a>
+                                <a href="#" class="link-text">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card tilt-card">
+                        <div class="tilt-glare"></div>
+                        <div class="project-img">
+                            <img src="assets/project3.png" alt="Portfolio Website">
+                        </div>
+                        <div class="project-info">
+                            <h3>Portfolio Website</h3>
+                            <p>Responsive personal portfolio website with dark mode.</p>
+                            <div class="tech-stack">
+                                <span>HTML/CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="btn-link read-more-btn" data-modal="modal-3">Read Case Study</button>
+                                <a href="#" class="link-text">Live Demo</a>
+                                <a href="#" class="link-text">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="blog section reveal">
+            <div class="container">
+                <h2 class="section-title">Latest Articles</h2>
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-content">
+                            <span class="blog-date">Oct 12, 2025</span>
+                            <h3>Optimizing Flutter Performance</h3>
+                            <p>Tips and tricks to make your Flutter apps run smoother on older devices.</p>
+                            <a href="#" class="read-more">Read Article →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-content">
+                            <span class="blog-date">Sep 28, 2025</span>
+                            <h3>Why Flutter is the Future</h3>
+                            <p>An in-depth look at why cross-platform development is taking over.</p>
+                            <a href="#" class="read-more">Read Article →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-content">
+                            <span class="blog-date">Aug 15, 2025</span>
+                            <h3>Getting Started with Firebase</h3>
+                            <p>A beginner's guide to setting up Firebase for your mobile apps.</p>
+                            <a href="#" class="read-more">Read Article →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services section reveal">
+            <div class="container">
+                <h2 class="section-title">Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>App Development</h3>
+                        <p>Building cross-platform mobile applications for iOS and Android using Flutter.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Web Development</h3>
+                        <p>Creating responsive and modern websites.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Backend Integration</h3>
+                        <p>Setting up secure servers and API connections with Firebase.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section reveal">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+
+                <div class="contact-wrapper">
+
+                    <!-- Left: Info Panel -->
+                    <div class="contact-info">
+                        <div class="contact-heading">
+                            <p class="contact-tagline">Have a project in mind?</p>
+                            <p class="contact-sub">Let's build something great together. I'm currently available for
+                                freelance &amp; remote work.</p>
+                        </div>
+
+                        <!-- Availability Badge -->
+                        <div class="availability-badge">
+                            <span class="avail-dot"></span>
+                            Available for hire
+                        </div>
+
+                        <!-- Contact Cards -->
+                        <div class="contact-cards">
+                            <a href="mailto:ashishkhardah@gmail.com" class="contact-card">
+                                <div class="contact-card-icon">✉</div>
+                                <div class="contact-card-body">
+                                    <span class="contact-card-label">Email</span>
+                                    <span class="contact-card-value">ashishkhardah@gmail.com</span>
+                                </div>
+                            </a>
+                            <a href="tel:+918229923300" class="contact-card">
+                                <div class="contact-card-icon">✆</div>
+                                <div class="contact-card-body">
+                                    <span class="contact-card-label">Phone</span>
+                                    <span class="contact-card-value">+91 82299 23300</span>
+                                </div>
+                            </a>
+                            <a href="https://wa.me/918229923300" target="_blank" class="contact-card">
+                                <div class="contact-card-icon">◎</div>
+                                <div class="contact-card-body">
+                                    <span class="contact-card-label">WhatsApp</span>
+                                    <span class="contact-card-value">Chat directly</span>
+                                </div>
+                            </a>
+                            <a href="#" class="contact-card">
+                                <div class="contact-card-icon">◈</div>
+                                <div class="contact-card-body">
+                                    <span class="contact-card-label">LinkedIn</span>
+                                    <span class="contact-card-value">View profile</span>
+                                </div>
+                            </a>
+                            <a href="#" class="contact-card">
+                                <div class="contact-card-icon">⊛</div>
+                                <div class="contact-card-body">
+                                    <span class="contact-card-label">GitHub</span>
+                                    <span class="contact-card-value">View repositories</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Form Panel -->
+                    <div class="contact-form-panel">
+                        <form class="contact-form" id="contact-form" novalidate>
+                            <div class="form-row">
+                                <div class="form-field">
+                                    <input type="text" id="user_name" name="user_name" placeholder=" " required>
+                                    <label for="user_name">Your Name</label>
+                                    <span class="form-line"></span>
+                                </div>
+                                <div class="form-field">
+                                    <input type="email" id="user_email" name="user_email" placeholder=" " required>
+                                    <label for="user_email">Your Email</label>
+                                    <span class="form-line"></span>
+                                </div>
+                            </div>
+                            <div class="form-field">
+                                <input type="text" id="subject" name="subject" placeholder=" ">
+                                <label for="subject">Subject</label>
+                                <span class="form-line"></span>
+                            </div>
+                            <div class="form-field">
+                                <textarea id="message" name="message" placeholder=" " rows="5" required></textarea>
+                                <label for="message">Your Message</label>
+                                <span class="form-line"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary contact-submit">
+                                <span class="submit-text">Send Message</span>
+                                <span class="submit-arrow">→</span>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 🖥️ Ashish Sharma. All rights reserved.</p>
+            <p class="tagline">Build. Design. Innovate.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/918229923300" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        💬
+    </a>
+
+    <!-- Modals -->
+    <div id="modal-1" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>E-Commerce App Case Study</h2>
+            <p><strong>Problem:</strong> Users needed a faster way to checkout.</p>
+            <p><strong>Solution:</strong> Implemented one-click checkout using Stripe.</p>
+            <p><strong>Result:</strong> Sales increased by 20%.</p>
+        </div>
+    </div>
+
+    <div id="modal-2" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Task Manager Case Study</h2>
+            <p><strong>Problem:</strong> Users were forgetting tasks.</p>
+            <p><strong>Solution:</strong> Added push notifications and reminders.</p>
+            <p><strong>Result:</strong> User retention improved by 15%.</p>
+        </div>
+    </div>
+
+    <div id="modal-3" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Portfolio Website Case Study</h2>
+            <p><strong>Problem:</strong> Needed a professional online presence.</p>
+            <p><strong>Solution:</strong> Built a responsive, dark-mode enabled site.</p>
+            <p><strong>Result:</strong> Increased client inquiries.</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>

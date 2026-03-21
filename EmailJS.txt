@@ -1,0 +1,85 @@
+service_irwc2yh
+
+template_3ukozeb
+
+uFwZ8lwDLP2WKTe-w
+
+📧 EmailJS Setup Guide: Messages to "
+ashishkhardah@gmail.com
+"
+Ye guide aapko step-by-step batayegi ki kaise aap apne form ko connect karein taaki saare messages seedha aapke 
+ashishkhardah@gmail.com
+ par aayein.
+
+Step 1: Account Banana (Create Account)
+Website par jayein: https://www.emailjs.com/ open karein.
+Sign Up: "Sign Up Free" par click karein.
+Form Bharein: Apna naam, email (
+ashishkhardah@gmail.com
+), aur password daal kar account bana lein.
+Step 2: Email Connect Karna (Connect Email Service)
+Ye sabse important step hai. Yahan hum EmailJS ko batayenge ki emails kahan bhejne hain.
+
+Login karne ke baad, Dashboard par "Email Services" tab par click karein.
+"Add New Service" button dabayein.
+List mein se "Gmail" select karein.
+Ek popup aayega. Usme "Connect Account" par click karein.
+Apna 
+ashishkhardah@gmail.com
+ wala account select karein aur permissions allow karein.
+Ab "Create Service" button par click karein.
+✅ Service ID Note Karein: Wahan ek ID likha hoga (jaise service_z4x9...). Ise copy kar lein.
+Step 3: Email Ka Design Banana (Create Email Template)
+Jab koi message bhejega, toh wo email kaisa dikhega?
+
+Dashboard mein "Email Templates" tab par click karein.
+"Create New Template" par click karein.
+Subject mein likhein: New Message from Portfolio: {{user_name}}
+Content mein ye paste kar dein:
+Hello Ashish,
+You got a new message from your portfolio website!
+Name: {{user_name}}
+Email: {{user_email}}
+Message:
+{{message}}
+Best,
+Your Portfolio Bot
+"To Email" field check karein: Wahan {{user_email}} ki jagah 
+ashishkhardah@gmail.com
+ hona chahiye (usually ye automatic hota hai agar aapne usi email se login kiya hai). Agar nahi hai, toh wahan apna email likh dein.
+Save par click karein.
+✅ Template ID Note Karein: Template ke naam ke paas ek ID hoga (jaise template_a1b2...). Ise copy kar lein.
+Step 4: Public Key Lena
+Dashboard mein neeche left corner mein "Account" par click karein.
+Wahan "Public Key" likha hoga (jaise user_XyZ123...).
+✅ Public Key Note Karein: Ise copy kar lein.
+Step 5: Code Mein Keys Daalna (Last Step!)
+Ab aapke paas 3 cheezein hain:
+
+Service ID (Step 2 se)
+Template ID (Step 3 se)
+Public Key (Step 4 se)
+Inhe apne code mein daalna hai:
+
+1. 
+index.html
+ file kholein
+Line number 25 ke aas-paas dekhein:
+
+emailjs.init("YOUR_PUBLIC_KEY");
+YOUR_PUBLIC_KEY ko hata kar apni Public Key paste karein.
+
+2. 
+js/main.js
+ file kholein
+Line number 65 ke aas-paas dekhein:
+
+emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form)
+YOUR_SERVICE_ID ki jagah apni Service ID paste karein.
+YOUR_TEMPLATE_ID ki jagah apni Template ID paste karein.
+🎉 Badhai Ho! Ab jab bhi koi user aapki website par form bharega aur "Send Message" dabayega:
+
+EmailJS us message ko lega.
+Aapke Gmail account (ashishkhardah@gmail.com) use karke...
+Waapas aap hi ke email (ashishkhardah@gmail.com) par wo message bhej dega.
+Aap ise test karne ke liye form mein kuch bhi likh kar "Send" dabayein aur apna inbox check karein!
